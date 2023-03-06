@@ -15,6 +15,23 @@ const hashPass = async (req, res, next) => {
   }
 };
 
+const comparePass = async (req, res, next) => {
+  try {
+    // get user
+
+    // compare passwords
+
+    // if no match - respond with 500 error message "passwords do not match"
+
+    // if match - next function
+    console.log(req.body);
+    next();
+  } catch (error) {
+    res.status(501).json({ errorMessage: error.message, error: error });
+  }
+};
+
 module.exports = {
   hashPass,
+  comparePass,
 };

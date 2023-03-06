@@ -19,6 +19,19 @@ const registerUser = async (req, res) => {
   }
 };
 
+const login = async (req, res) => {
+  try {
+    // package user to exclude password or hashed password
+
+    // send user data back in response
+
+    res.status(201).json({ message: "route functions not finished!" });
+  } catch (error) {
+    res.status(501).json({ errorMessage: error.message, error: error });
+  }
+};
+
 module.exports = {
   registerUser,
+  login,
 };
