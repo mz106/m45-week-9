@@ -25,7 +25,12 @@ const login = async (req, res) => {
 
     // send user data back in response
 
-    res.status(201).json({ message: "route functions not finished!" });
+    res
+      .status(201)
+      .json({
+        message: "success",
+        user: { username: req.user.username, email: req.user.email },
+      });
   } catch (error) {
     res.status(501).json({ errorMessage: error.message, error: error });
   }

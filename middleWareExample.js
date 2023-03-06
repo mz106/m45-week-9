@@ -18,6 +18,7 @@ const middleOne = async (req, res, next) => {
 const middleTwo = async (req, res, next) => {
   console.log("start middleTwo", req.body);
   req.body["middleTwo"] = "Im from middleTwo";
+  req.body.middleTwo = "kfhv;skfhgv;";
   next();
 };
 
