@@ -25,3 +25,5 @@ app.listen(port, () => {
   syncTables();
   console.log(`App listening on port ${port}`);
 });
+
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc4MjA0NjcyfQ.wwbQPuM3PpOkGKXRkYnHfKH2gVcXh6TMVaJ_EDVnTfU
