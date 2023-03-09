@@ -8,6 +8,7 @@ const userRouter = require("./users/routes");
 const User = require("./users/model");
 
 const app = express();
+console.log("test")
 
 app.use(express.json());
 
